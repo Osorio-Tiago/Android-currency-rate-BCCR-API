@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Tipo de cambio BCCR</string>
+
+    <string name="consulta">consultar</string>
+    <string name="compra">₡</string>
+    <string name="venta">₡</string>
+    <string name="ventaText">Venta</string>
+    <string name="compraText">Compra</string>
+
+    <string name="cambio">Tipo de cambio</string>
+    <string name="conversor">Conversor de moneda</string>
+
+    <string name="colon">₡0.00"   "</string>
+    <string name="dolar">$0.00"   "</string>
+
+    <string name="usd">USD</string>
+    <string name="crc">CRC</string>
+    <string name="sin_internet">"  "Sin internet</string>
+
+</resources>

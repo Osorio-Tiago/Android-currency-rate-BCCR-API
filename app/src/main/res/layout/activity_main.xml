@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grayTest"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewWhite"
+        android:layout_width="454dp"
+        android:layout_height="230dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewWhite2" />
+
+    <TextView
+        android:id="@+id/conversorText"
+        android:layout_width="237dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="272dp"
+        android:fontFamily="serif"
+        android:text="@string/conversor"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/resultadoCalculo"
+        android:layout_width="292dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_border"
+        android:cursorVisible="false"
+        android:editable="false"
+        android:ems="10"
+        android:hint="@string/dolar"
+        android:inputType="number"
+        android:numeric="decimal"
+        android:textAlignment="textEnd"
+        android:textColor="@color/black"
+        android:textColorHint="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.684"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calcular" />
+
+    <TextView
+        android:id="@+id/usdTextView"
+        android:layout_width="53dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="168dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:text="@string/usd"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/valorCompra2" />
+
+    <ImageButton
+        android:id="@+id/swapBtn"
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="124dp"
+        android:background="#00000000"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:scaleType="centerInside"
+        android:theme="@android:style/ThemeOverlay.Material.Dark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/valorCompra"
+        app:srcCompat="@drawable/pngwing_com__2_" />
+
+    <EditText
+        android:id="@+id/calcular"
+        android:layout_width="292dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_text_border"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:hint="@string/colon"
+        android:inputType="numberDecimal"
+        android:numeric="decimal"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/black"
+        android:textColorHint="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.684"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/conversorText" />
+
+    <TextView
+        android:id="@+id/textViewWhite2"
+        android:layout_width="465dp"
+        android:layout_height="174dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="4dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/valorVenta"
+        android:layout_width="144dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/venta"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/valorCompra"
+        app:layout_constraintTop_toBottomOf="@+id/cambioText" />
+
+    <TextView
+        android:id="@+id/valorVenta2"
+        android:layout_width="130dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="monospace"
+        android:text="@string/ventaText"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/valorCompra2"
+        app:layout_constraintTop_toBottomOf="@+id/cambioText" />
+
+    <TextView
+        android:id="@+id/valorCompra2"
+        android:layout_width="130dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="196dp"
+        android:fontFamily="monospace"
+        android:text="@string/compraText"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/valorCompra"
+        android:layout_width="144dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="196dp"
+        android:text="@string/compra"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cambioText"
+        android:layout_width="217dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="serif"
+        android:text="@string/cambio"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/crcTextView"
+        android:layout_width="53dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="92dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:text="@string/crc"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/valorCompra2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
